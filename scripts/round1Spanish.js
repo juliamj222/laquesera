@@ -281,7 +281,7 @@ next.addEventListener("click", () => {
   player2ScoreToPass = player2Score;
   currentPlayerToPass = currentPlayer;
 
-  alert("you go to the next round");
+  alert("Pasas a la siguiente ronda");
 });
 
 guess.addEventListener("click", () => {
