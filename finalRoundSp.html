@@ -22,12 +22,12 @@
     <!-- the wrapper contains all the divs -->
     <div id="finalWrapper">
       <div class="roundHeader">
-        <h1 id="header1">Final Round</h1>
+        <h1 id="header1">Última ronda</h1>
         <!-- h2 that shows whose turn it is -->
         <h1 id="turnRound"></h1>
       </div>
       <h2 class="animate__animated animate__bounce">
-        How much are you willing to bet?
+        Cuántos puntos vas a jugar?
       </h2>
       <!--  script source. Allows import/export to work. -->
       <script src="./scripts/finalRoundSpanish.js" type="module">
@@ -49,32 +49,34 @@
       />
 
       <!-- the question -->
-      <h3 class="questionDisplay1">BET TO SEE THE FINAL QUESTION</h3>
+      <h3 class="questionDisplay1">
+        JUEGA TUS PUNTOS PARA VER LA PREGUNTA FINAL
+      </h3>
 
       <!-- answering div. player inputs answer and guesses -->
       <div class="answering">
-        <label for="finalBetAmount">Final Bet</label>
+        <label for="finalBetAmount">Apuesta final</label>
         <input
           type="number"
           class="final"
           id="finalBetAmount"
-          placeholder="Bet an amount and click BET."
+          placeholder="Completa con una cantidad"
         />
-        <div class="button" id="finalBet" href="">BET</div>
-        <label for="userAnswer1">Answer</label>
+        <div class="button" id="finalBet" href="">Apuesta</div>
+        <label for="userAnswer1">Respuesta</label>
         <input
           type="text"
           class="userAnswer1"
-          placeholder="Answer the question and click GUESS."
+          placeholder="Responde a la pregunta"
         />
 
-        <div class="button" id="guess" href="">GUESS</div>
+        <div class="button" id="guess" href="">RESPUESTA</div>
       </div>
 
       <!-- scores div. keeps track of the points -->
       <div class="scores">
-        <p id="player1Score">Player</p>
-        <p id="player2Score">Player</p>
+        <p id="player1Score">Participante</p>
+        <p id="player2Score">Participante</p>
       </div>
       <footer>La Quesera Copyright 2024</footer>
     </div>

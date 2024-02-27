@@ -38,10 +38,10 @@ let pointAmount = 0;
 function updateScoreDisplay() {
   document.querySelector(
     "#player1Score"
-  ).textContent = `Player 1 - Score: ${player1Score}`;
+  ).textContent = `Participante 1 - Puntuación: ${player1Score}`;
   document.querySelector(
     "#player2Score"
-  ).textContent = `Player 2 - Score: ${player2Score}`;
+  ).textContent = `Participante 2 - Puntuación: ${player2Score}`;
 }
 
 updateScoreDisplay();
@@ -90,9 +90,7 @@ guess.addEventListener("click", () => {
     addPoints();
     updateScoreDisplay();
     console.log(`Player1:${player1Score}, Player2:${player2Score}`);
-    alert(
-      "Congratulations! Your answer was right! You won the game! END OF THE GAME"
-    );
+    alert("Enhorabuena! Tu respuesta es correcta! GANASTE EL JUEGO :) ");
     // Redirect to index.html
     window.location.href = "index.html";
   } else if (userInput1.toLowerCase() != currentAnswer.toLowerCase()) {
@@ -100,7 +98,7 @@ guess.addEventListener("click", () => {
     updateScoreDisplay();
 
     console.log(`Player1:${player1Score}, Player2:${player2Score}`);
-    alert("Wrong answer! END OF THE GAME");
+    alert("Respuesta incorrecta! FIN DEL JUEGO :( ");
     // Redirect to index.html
     window.location.href = "index.html";
   }
@@ -109,6 +107,6 @@ guess.addEventListener("click", () => {
 window.addEventListener("load", () => {
   document.querySelector(
     "#turnRound"
-  ).textContent = `Player ${currentPlayer}'s turn!`; // turns
+  ).textContent = `¡PARTICIPANTE ${currentPlayer}!`; // turns
   updateScoreDisplay(); //updating the score after the turn
 });
