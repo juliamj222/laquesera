@@ -69,7 +69,6 @@ body {
 
 #indexWrapper,
 #wrapperRound1,
-#wrapper3,
 #finalWrapper {
   background-color: var(--quaternary);
   display: flex;
@@ -109,20 +108,7 @@ h3,
   z-index: 100;
 }
 
-#finalBoard {
-  font-size: 1.5vw;
-  color: aliceblue;
-  background-color: rgba(7, 220, 220, 0.993);
-  padding-left: 3em;
-  padding-right: 3em;
-
-  border: 2px solid black;
-  margin: 0.5rem auto;
-  display: flex;
-  justify-content: center;
-}
-
-#final {
+/* #final {
   font-size: 1.5vw;
   color: aliceblue;
   background-color: rgba(155, 159, 170, 0.639);
@@ -132,7 +118,7 @@ h3,
   margin: 0.5rem auto;
   display: flex;
   justify-content: center;
-}
+} */
 
 #final > h3 {
   display: flex;
@@ -146,8 +132,9 @@ h3,
   font-size: 5vh;
 }
 
-#cheeses {
-  max-height: 40vh;
+#cheeses,
+#mouseKwai {
+  max-height: 20vh;
   margin: 0 auto;
 }
 
@@ -285,7 +272,7 @@ footer {
   #finalBoard,
   #final,
   label,
-  .animate__animated.animate__bounce,
+  .animate__animated .animate__bounce,
   .answering input[type="text"],
   .answering input[type="number"],
   .scores > p {

@@ -1,6 +1,6 @@
 <!-- boilerplate -->
 <!DOCTYPE html>
-<html lang="sp">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,18 +11,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Última ronda</title>
+    <!-- font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <title>Última Ronda</title>
   </head>
 
   <body>
     <!-- the wrapper contains all the divs -->
-    <div id="wrapper4">
-      <h1 id="header1">Última ronda</h1>
-      <!-- h2 that shows whose turn it is -->
-      <h2 id="turnRound"></h2>
-      <h5 class="animate__animated animate__bounce">
+    <div id="finalWrapper">
+      <div class="roundHeader">
+        <h1 id="header1">Final Round</h1>
+        <!-- h2 that shows whose turn it is -->
+        <h1 id="turnRound"></h1>
+      </div>
+      <h2 class="animate__animated animate__bounce">
         How much are you willing to bet?
-      </h5>
+      </h2>
       <!--  script source. Allows import/export to work. -->
       <script src="./scripts/finalRoundSpanish.js" type="module">
         const url = window.location.href;
@@ -36,13 +42,14 @@
       <!-- h2 that shows whose turn it is -->
       <h2 id="turnRound"></h2>
 
-      <div id="finalBoard">
-        <header>FINAL CATEGORY</header>
-      </div>
-      <!-- h3 that displays the question -->
-      <div id="final">
-        <h3 class="questionDisplay1">BET TO SEE THE FINAL QUESTION</h3>
-      </div>
+      <img
+        src="assets/mouseKwai.jpg"
+        id="mouseKwai"
+        alt="Mouse with a piece of cheese"
+      />
+
+      <!-- the question -->
+      <h3 class="questionDisplay1">BET TO SEE THE FINAL QUESTION</h3>
 
       <!-- answering div. player inputs answer and guesses -->
       <div class="answering">
